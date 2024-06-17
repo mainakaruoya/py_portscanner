@@ -1,5 +1,8 @@
 ### Port Scanner (Basic)
 A simple, command-line port scanner for Python. Can carry out a TCP SYN and UDP ping scan, or both, depending on the flags that have been set.
+Requires the use of Scapy, which is in the requirements.txt file, and can be installed thus
+
+`pip install -r requirements.txt`
 
 #### Usage and Options
 Convention for the usage below -- curly brackets indicate mandatory arguments; square brackets indicate optional arguments.
