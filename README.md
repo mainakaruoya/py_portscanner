@@ -9,10 +9,15 @@ Usage:
 `python portscanner.py [-h] -a <IP address/range> -p <port number/range> {-t | -u | -b}`
 Options:
 `-h, --help            show this help message and exit`
+
 `-a <IP address/range>, --address <IP address/range>`
+
 `-p <port number/range>, --port <port number/range>`
+
 `-t, --tcp             Carry out a TCP SYN Scan for the given port/range of ports`
+
 `-u, --udp             Carry out a UDP Ping Scan for the given port/range of ports`
+
 `-b, --both            Carry out both a TCP SYN and UDP Ping Scan`
 
 The sections below detail some links to visit that can help one in developing a port scanner.
