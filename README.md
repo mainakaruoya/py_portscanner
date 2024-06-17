@@ -1,6 +1,6 @@
 ### Port Scanner (Basic)
 A simple, command-line port scanner for Python. Can carry out a TCP SYN and UDP ping scan, or both, depending on the flags that have been set.
-Requires the use of Scapy, which is in the requirements.txt file, and can be installed thus
+Requires the use of Scapy, which is in the requirements.txt file, and can be installed thus:
 
 `pip install -r requirements.txt`
 
@@ -35,18 +35,22 @@ https://www.digitalocean.com/community/tutorials/how-to-use-argparse-to-write-co
 
 #### Working with IP addresses
 The IP address type in Python: https://docs.python.org/3/howto/ipaddress.html#ipaddress-howto
+
 Extra links:
 https://www.geeksforgeeks.org/how-to-manipulate-ip-addresses-in-python-using-ipaddress-module/
 https://www.geeksforgeeks.org/working-with-ip-addresses-in-python/
 
 #### Using Scapy
 UDP Ping Scan: https://scapy.readthedocs.io/en/latest/usage.html#udp-ping
+
 TCP SYN Scan: https://scapy.readthedocs.io/en/latest/usage.html#syn-scans
 
 #### Other Useful Content
 To create the UDP Port Scan, I referenced the following code, specifically the udp_scan function:
 [Source code](https://github.com/cptpugwash/Scapy-port-scanner/blob/master/port_scanner.py)
+
 Colorama to color output text: https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal
+
 Another link on Colorama usage: https://www.codeease.net/programming/python/how-to-bold-in-colorama
 
 #### Suppressing Scapy Messages
