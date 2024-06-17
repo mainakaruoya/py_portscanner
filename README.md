@@ -7,7 +7,9 @@ Use `python3` instead of `python` if working from Linux
 
 Usage:
 `python portscanner.py [-h] -a <IP address/range> -p <port number/range> {-t | -u | -b}`
+
 Options:
+
 `-h, --help            show this help message and exit`
 
 `-a <IP address/range>, --address <IP address/range>`
