@@ -3,7 +3,7 @@ A simple, command-line port scanner for Python. Can carry out a TCP SYN and UDP 
 
 #### Usage and Options
 Convention for the usage below -- curly brackets indicate mandatory arguments; square brackets indicate optional arguments.
-Use `python3` instead of `python` if working from Linux
+Use `python3` instead of `python` if working from Linux.
 
 Usage:
 `python portscanner.py [-h] -a <IP address/range> -p <port number/range> {-t | -u | -b}`
