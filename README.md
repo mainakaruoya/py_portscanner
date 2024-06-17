@@ -3,20 +3,17 @@ A simple, command-line port scanner for Python. Can carry out a TCP SYN and UDP 
 
 #### Usage and Options
 Convention for the usage below -- curly brackets indicate mandatory arguments; square brackets indicate optional arguments.
-Use python3 instead of python if working from Linux
+Use `python3` instead of `python` if working from Linux
 
 Usage:
 `python portscanner.py [-h] -a <IP address/range> -p <port number/range> {-t | -u | -b}`
 Options:
-  `-h, --help            show this help message and exit`
-  `-a <IP address/range>, --address <IP address/range>`
-                        `An individual IP address or range of IP addresses to scan. Use a comma to separate individual IPv4 addresses (no spaces, you have to write out both IPs in `    
-                        `full); use a hyphen (-) to specify an arbitrary range of addresses; use a forward slash (/) to specify a CIDR subnet to be scanned.`
-  `-p <port number/range>, --port <port number/range>`
-                        `Port/port range, to scan. Use a comma to separate individual ports (no spaces); use a hyphen (-) to get a range of ports`
-  `-t, --tcp             Carry out a TCP SYN Scan for the given port/range of ports`
-  `-u, --udp             Carry out a UDP Ping Scan for the given port/range of ports`
-  `-b, --both            Carry out both a TCP SYN and UDP Ping Scan`
+`-h, --help            show this help message and exit`
+`-a <IP address/range>, --address <IP address/range>`
+`-p <port number/range>, --port <port number/range>`
+`-t, --tcp             Carry out a TCP SYN Scan for the given port/range of ports`
+`-u, --udp             Carry out a UDP Ping Scan for the given port/range of ports`
+`-b, --both            Carry out both a TCP SYN and UDP Ping Scan`
 
 The sections below detail some links to visit that can help one in developing a port scanner.
 
