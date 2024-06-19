@@ -17,8 +17,8 @@ colorama_init()
 parser = argparse.ArgumentParser(
     description="This is a CLI-based port scanner. Takes an IPv4 address/range, a port/port range, and scans the port(s) to determine if it/they are open."
 )
-# addressGroup - ensure user enters a single IP, or a range of IP addresses
-# protocolGroup - ensure user chooses to scan TCP ports, UDP ports, or both
+
+
 protocolsToScanGroup = parser.add_mutually_exclusive_group(required=True)
 
 parser.add_argument("-a", "--address", metavar="<IP address/range>", type=str,
