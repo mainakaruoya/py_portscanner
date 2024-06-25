@@ -35,17 +35,8 @@ protocolsToScanGroup.add_argument(
     "-b", "--both", action="store_true", help="Carry out both a TCP SYN and UDP Ping Scan")
 
 
-receivedArguments = parser.parse_args()
-
-address = receivedArguments.address
-portRange = receivedArguments.port
-tcpFlag = receivedArguments.tcp
-udpFlag = receivedArguments.udp
-bothFlag = receivedArguments.both
-
-
 def printPortScanResults(scanType: str, portScanResults: list):
-    print(f"\n{Style.BRIGHT}{scanType} Scan Results{Style.RESET_ALL}")
+    print(f"\n{Style.BRIGHT}{scanType}Scan Results{Style.RESET_ALL}")
     for individualResult in portScanResults:
         print(f"--------\nResults for IP address {individualResult[0]}")
         print(f"🟢 {Style.BRIGHT}Open port(s): {Fore.GREEN}{individualResult[1]}{Style.RESET_ALL}")
@@ -122,8 +113,7 @@ def convertToNumber(userInput: str) -> list:
         portRange = userInput.split("-", 1)
         for value in portRange:
             rangeOfPorts.append(int(value))
-        print(f"{Style.BRIGHT}---Port(s) to scan: {
-              list(range(rangeOfPorts[0], rangeOfPorts[1]+1))}{Style.RESET_ALL}")
+        print(f"{Style.BRIGHT}---Port(s) to scan: {list(range(rangeOfPorts[0], rangeOfPorts[1]+1))}{Style.RESET_ALL}")
         return list(range(rangeOfPorts[0], rangeOfPorts[1]+1))
 
     else:
@@ -167,6 +157,14 @@ def processIPAddressInput(userInput: str) -> list:
 
 
 def processReceivedArguments():
+    receivedArguments = parser.parse_args()
+
+    address = receivedArguments.address
+    portRange = receivedArguments.port
+    tcpFlag = receivedArguments.tcp
+    udpFlag = receivedArguments.udp
+    bothFlag = receivedArguments.both
+
     try:
         if tcpFlag and address:
             synScanIPAddress(processIPAddressInput(
@@ -182,7 +180,7 @@ def processReceivedArguments():
     except:
         print("Error: Incorrect flags set.")
 
-
-processReceivedArguments()
+if __name__ == "__main__":
+    processReceivedArguments()
 
 
